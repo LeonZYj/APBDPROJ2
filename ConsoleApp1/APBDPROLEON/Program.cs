@@ -19,10 +19,10 @@ namespace APBDPROLEON
             {
                 DeviceManager manager = new DeviceManager(filePath);
                 
-                Console.WriteLine("\nDisplaying All Devices:");
+                Console.WriteLine("\nAll Devices:");
                 manager.ShowAllDevices();
                 
-                Console.WriteLine("\nAttempting to Turn On Devices:");
+                Console.WriteLine("\nTurn On Devices:");
                 foreach (var device in manager.GetDevices())
                 {
                     try

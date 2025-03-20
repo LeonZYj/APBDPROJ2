@@ -149,6 +149,8 @@ namespace APBDPROLEON
 
             devices.Add(device);
             Console.WriteLine($"Device {device.Id} added.");
+            
+            SaveToFile();
         }
 
         public void RemoveDevice(string id)
@@ -158,6 +160,7 @@ namespace APBDPROLEON
             {
                 devices.Remove(device);
                 Console.WriteLine($"Device {id} removed ({device.GetType().Name}).");
+                SaveToFile();
             }
             else
             {
@@ -173,6 +176,8 @@ namespace APBDPROLEON
                 Console.WriteLine($"Error: Device {id} not found.");
                 return;
             }
+
+            Console.WriteLine($"Editing device: {device.Id}");
 
             if (device is PersonalComputer pc)
             {
@@ -192,8 +197,8 @@ namespace APBDPROLEON
                 ed.SetNetworkName(newNetwork);
                 Console.WriteLine($"Embedded Device {id} updated network to {newNetwork}.");
             }
+            SaveToFile();
         }
-
         public void SaveToFile()
         {
             try
@@ -206,13 +211,14 @@ namespace APBDPROLEON
                 }
 
                 File.WriteAllLines(filePath, lines);
-                Console.WriteLine("Devices saved successfully.");
+                Console.WriteLine("saved.");
             }
             catch (IOException ex)
             {
-                Console.WriteLine($"File write error: {ex.Message}");
+                Console.WriteLine($"error {ex.Message}");
             }
         }
+
         public List<Device> GetDevices()
         {
             return devices;
