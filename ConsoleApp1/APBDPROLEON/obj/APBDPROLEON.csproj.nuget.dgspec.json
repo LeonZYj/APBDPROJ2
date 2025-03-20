@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leonz\\OneDrive\\Pulpit\\APBDTASK2\\ConsoleApp1\\APBDPROLEON\\APBDPROLEON.csproj": {}
+    "C:\\Users\\leonz\\OneDrive\\Documents\\APBDTASK2\\ConsoleApp1\\APBDPROLEON\\APBDPROLEON.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leonz\\OneDrive\\Pulpit\\APBDTASK2\\ConsoleApp1\\APBDPROLEON\\APBDPROLEON.csproj": {
+    "C:\\Users\\leonz\\OneDrive\\Documents\\APBDTASK2\\ConsoleApp1\\APBDPROLEON\\APBDPROLEON.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leonz\\OneDrive\\Pulpit\\APBDTASK2\\ConsoleApp1\\APBDPROLEON\\APBDPROLEON.csproj",
+        "projectUniqueName": "C:\\Users\\leonz\\OneDrive\\Documents\\APBDTASK2\\ConsoleApp1\\APBDPROLEON\\APBDPROLEON.csproj",
         "projectName": "APBDPROLEON",
-        "projectPath": "C:\\Users\\leonz\\OneDrive\\Pulpit\\APBDTASK2\\ConsoleApp1\\APBDPROLEON\\APBDPROLEON.csproj",
+        "projectPath": "C:\\Users\\leonz\\OneDrive\\Documents\\APBDTASK2\\ConsoleApp1\\APBDPROLEON\\APBDPROLEON.csproj",
         "packagesPath": "C:\\Users\\leonz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leonz\\OneDrive\\Pulpit\\APBDTASK2\\ConsoleApp1\\APBDPROLEON\\obj\\",
+        "outputPath": "C:\\Users\\leonz\\OneDrive\\Documents\\APBDTASK2\\ConsoleApp1\\APBDPROLEON\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\leonz\\AppData\\Roaming\\NuGet\\NuGet.Config"
