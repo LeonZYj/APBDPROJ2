@@ -2,7 +2,7 @@ namespace APBDPROLEON
 {
     public class SmartWatch : Device, IPowerNotifier
     {
-        private int batteryPercentage;
+        public int batteryPercentage;
         private bool lowOnBattery;
 
         public SmartWatch(string id, string name, bool isTurnedOn, int batteryPercentage)

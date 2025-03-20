@@ -11,28 +11,30 @@ namespace APBDPROLEON
 
             if (!File.Exists(filePath))
             {
-                Console.WriteLine($"{filePath}' not found.");
+                Console.WriteLine($"Error: File '{filePath}' not found.");
                 return;
             }
 
             try
             {
                 DeviceManager manager = new DeviceManager(filePath);
-                
-                Console.WriteLine("\nDisplaying All Devices:");
+
+                // ✅ Show all devices
+                Console.WriteLine("\n📌 Displaying All Devices:");
                 manager.ShowAllDevices();
-                
-                Console.WriteLine("\nAttempting to Turn On Devices:");
-                foreach (var device in manager.GetDevices())
+
+                // ✅ Turn on devices
+                Console.WriteLine("\n🚀 Attempting to Turn On Devices:");
+                foreach (var device in manager.GetDevices()) // GetDevices() should return the list
                 {
                     try
                     {
                         device.TurnOn();
-                        Console.WriteLine($"{device.Name} is now ON.");
+                        Console.WriteLine($"✅ {device.Name} is now ON.");
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine($"Cannot turn on {device.Name}: {ex.Message}");
+                        Console.WriteLine($"⚠️ Cannot turn on {device.Name}: {ex.Message}");
                     }
                 }
             }

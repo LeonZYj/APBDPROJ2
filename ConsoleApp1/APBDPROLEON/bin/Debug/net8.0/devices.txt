@@ -1,0 +1,2 @@
+[EmbeddedDevice] Name: Raspberry Pi 3, ID: ED-1, IsTurnedOn: True, Network: MD Ltd.Wifi-1, IP: 192.168.1.44
+[EmbeddedDevice] Name: Pi 4, ID: ED-2, IsTurnedOn: True, Network: MD Ltd.Office, IP: 192.168.1.45
