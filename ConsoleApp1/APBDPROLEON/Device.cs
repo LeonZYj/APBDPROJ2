@@ -13,4 +13,10 @@ public abstract class Device
         this.IsTurnedOn = isTurnedOn;
     }
     public abstract override string ToString();
+    public abstract void TurnOn();
+    public void TurnOff()
+    {
+        IsTurnedOn = false;
+        Console.WriteLine($"{Name} has been turned off.");
+    }
 }
