@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("APBDPROLEON")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+095c7041ea7ee8233d131b4c38b68b34c1f7eeb3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3536aa1b6ffa9189e7ef9adca05056087082b503")]
 [assembly: System.Reflection.AssemblyProductAttribute("APBDPROLEON")]
 [assembly: System.Reflection.AssemblyTitleAttribute("APBDPROLEON")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,45 +1,24 @@
-﻿using System;
-using System.IO;
+﻿using APBDPROLEON.DeviceManagerInterface;
+using APBDPROLEON.DeviceManagerSplitted;
 
-namespace APBDPROLEON
+class Program
 {
-    class Program
+    static void Main()
     {
-        static void Main()
+        string filePath = "input.txt";
+        FactoryDeviceManagerInterface factory = new DeviceManagerMainFac();
+        IDeviceManagerMainOperations operationmanager = factory.Create(filePath);
+
+        Console.WriteLine("\nAll Devices:");
+        foreach (var device in operationmanager.getDevices())
         {
-            string filePath = "input.txt";
+            Console.WriteLine(device);
+        }
 
-            if (!File.Exists(filePath))
-            {
-                Console.WriteLine($"{filePath}' not found.");
-                return;
-            }
-
-            try
-            {
-                DeviceManager manager = new DeviceManager(filePath);
-                
-                Console.WriteLine("\nDisplaying All Devices:");
-                manager.ShowAllDevices();
-                
-                Console.WriteLine("\nAttempting to Turn On Devices:");
-                foreach (var device in manager.GetDevices())
-                {
-                    try
-                    {
-                        device.TurnOn();
-                        Console.WriteLine($"{device.Name} is now ON.");
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine($"Cannot turn on {device.Name}: {ex.Message}");
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error: {ex.Message}");
-            }
+        Console.WriteLine("\nTurning On Devices:");
+        foreach (var device in operationmanager.getDevices())
+        {
+            operationmanager.turnOnDevice(device);
         }
     }
 }

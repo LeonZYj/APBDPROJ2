@@ -45,7 +45,7 @@ namespace APBDPROLEON
 
         public void NotifyLowPower()
         {
-            Console.WriteLine($"⚠ Warning: {Name} has low battery ({batteryPercentage}%)!");
+            Console.WriteLine($"Warning: {Name} has low battery ({batteryPercentage}%)!");
         }
 
         public override string ToString()
