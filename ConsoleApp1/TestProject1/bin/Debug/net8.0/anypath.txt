@@ -1,0 +1,1 @@
+ID: P001, Name: MyPC, IsTurnedOn: True, OperatingSystem: Windows 10

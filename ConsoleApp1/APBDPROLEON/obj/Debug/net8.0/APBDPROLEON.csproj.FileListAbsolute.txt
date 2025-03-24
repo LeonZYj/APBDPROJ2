@@ -1,0 +1,16 @@
+C:\Users\leonz\OneDrive\Documents\APBDTASK2\ConsoleApp1\APBDPROLEON\bin\Debug\net8.0\APBDPROLEON.exe
+C:\Users\leonz\OneDrive\Documents\APBDTASK2\ConsoleApp1\APBDPROLEON\bin\Debug\net8.0\Program.cs
+C:\Users\leonz\OneDrive\Documents\APBDTASK2\ConsoleApp1\APBDPROLEON\bin\Debug\net8.0\APBDPROLEON.deps.json
+C:\Users\leonz\OneDrive\Documents\APBDTASK2\ConsoleApp1\APBDPROLEON\bin\Debug\net8.0\APBDPROLEON.runtimeconfig.json
+C:\Users\leonz\OneDrive\Documents\APBDTASK2\ConsoleApp1\APBDPROLEON\bin\Debug\net8.0\APBDPROLEON.dll
+C:\Users\leonz\OneDrive\Documents\APBDTASK2\ConsoleApp1\APBDPROLEON\bin\Debug\net8.0\APBDPROLEON.pdb
+C:\Users\leonz\OneDrive\Documents\APBDTASK2\ConsoleApp1\APBDPROLEON\obj\Debug\net8.0\APBDPROLEON.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leonz\OneDrive\Documents\APBDTASK2\ConsoleApp1\APBDPROLEON\obj\Debug\net8.0\APBDPROLEON.AssemblyInfoInputs.cache
+C:\Users\leonz\OneDrive\Documents\APBDTASK2\ConsoleApp1\APBDPROLEON\obj\Debug\net8.0\APBDPROLEON.AssemblyInfo.cs
+C:\Users\leonz\OneDrive\Documents\APBDTASK2\ConsoleApp1\APBDPROLEON\obj\Debug\net8.0\APBDPROLEON.csproj.CoreCompileInputs.cache
+C:\Users\leonz\OneDrive\Documents\APBDTASK2\ConsoleApp1\APBDPROLEON\obj\Debug\net8.0\APBDPROLEON.sourcelink.json
+C:\Users\leonz\OneDrive\Documents\APBDTASK2\ConsoleApp1\APBDPROLEON\obj\Debug\net8.0\APBDPROLEON.dll
+C:\Users\leonz\OneDrive\Documents\APBDTASK2\ConsoleApp1\APBDPROLEON\obj\Debug\net8.0\refint\APBDPROLEON.dll
+C:\Users\leonz\OneDrive\Documents\APBDTASK2\ConsoleApp1\APBDPROLEON\obj\Debug\net8.0\APBDPROLEON.pdb
+C:\Users\leonz\OneDrive\Documents\APBDTASK2\ConsoleApp1\APBDPROLEON\obj\Debug\net8.0\APBDPROLEON.genruntimeconfig.cache
+C:\Users\leonz\OneDrive\Documents\APBDTASK2\ConsoleApp1\APBDPROLEON\obj\Debug\net8.0\ref\APBDPROLEON.dll
