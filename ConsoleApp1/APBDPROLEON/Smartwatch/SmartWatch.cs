@@ -37,12 +37,6 @@ namespace APBDPROLEON
             Console.WriteLine($"{Name} is now turned on. Battery remaining: {batteryPercentage}%.");
         }
 
-        public void TurnOff()
-        {
-            IsTurnedOn = false;
-            Console.WriteLine($"{Name} has been turned off.");
-        }
-
         public void NotifyLowPower()
         {
             Console.WriteLine($"Warning: {Name} has low battery ({batteryPercentage}%)!");
