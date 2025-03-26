@@ -84,9 +84,9 @@ namespace APBDPROLEON.DeviceManagerSplitted
                     {
                         ((PersonalComputer)device).OperatingSystem = (string)newDevice;
                     }
-                    else if (device is SmartWatch smartWatch && newDevice is int newBattery)
+                    else if (device is BatteryPowerInterfacesmartwatchca batteryDevice && newDevice is int batteryLevel)
                     {
-                        smartWatch.SetBatteryLevel(newBattery);
+                        batteryDevice.setBatteryLevel(batteryLevel);
                     }
                     else if (device is EmbeddedDevice && newDevice is string)
                     {

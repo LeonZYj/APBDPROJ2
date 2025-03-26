@@ -1,8 +1,8 @@
 namespace APBDPROLEON
 {
-    public class SmartWatch : Device, IPowerNotifier
+    public class SmartWatch : Device, IPowerNotifier, BatteryPowerInterfacesmartwatchca
     {
-        public BAtteryPercentageFunctionality batteryBattery { get; private set; }
+        private BAtteryPercentageFunctionality batteryBattery { get; set; }
 
         public SmartWatch(string id, string name, bool isTurnedOn, int batteryPercentage)
             : base(id, name, isTurnedOn)
@@ -48,6 +48,16 @@ namespace APBDPROLEON
         public void SetBatteryLevel(int value)
         {
             batteryBattery.SetBatteryLevel(value);
+        }
+
+        public int getBatteryLevel()
+        {
+            return batteryBattery.GetBatteryLevel();
+        }
+
+        public void setBatteryLevel(int level)
+        { 
+            batteryBattery.SetBatteryLevel(level);
         }
     }
 }
