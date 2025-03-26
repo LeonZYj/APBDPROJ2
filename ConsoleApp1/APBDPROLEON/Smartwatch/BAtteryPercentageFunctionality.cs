@@ -24,10 +24,22 @@ public class BAtteryPercentageFunctionality
 
     public void BatterMinus10()
     {
-        BatteryPercentage =- 10;
+        BatteryPercentage -= 10;
         if (BatteryPercentage < 0)
         {
             BatteryPercentage = 0;
         }
     }
+    public int GetBatteryLevel()
+    {
+        return BatteryPercentage;
+    }
+    public void SetBatteryLevel(int value)
+    {
+        if (value < 0 || value > 100)
+            throw new ArgumentException("Battery must be between 0 and 100.");
+
+        BatteryPercentage = value;
+    }
+
 }

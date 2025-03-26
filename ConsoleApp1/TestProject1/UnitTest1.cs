@@ -1,4 +1,5 @@
 // using APBDPROLEON;
+// using APBDPROLEON.DeviceManagerSplitted;
 //
 // namespace TestProject1;
 //

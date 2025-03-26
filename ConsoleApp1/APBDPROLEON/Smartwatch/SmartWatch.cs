@@ -2,19 +2,13 @@ namespace APBDPROLEON
 {
     public class SmartWatch : Device, IPowerNotifier
     {
-        public int batteryPercentage;
-        private bool lowOnBattery;
+        public BAtteryPercentageFunctionality batteryBattery { get; private set; }
 
         public SmartWatch(string id, string name, bool isTurnedOn, int batteryPercentage)
             : base(id, name, isTurnedOn)
         {
-            if (batteryPercentage < 0 || batteryPercentage > 100)
-                throw new ArgumentException("Battery percentage must be between 0 and 100.");
-
-            this.batteryPercentage = batteryPercentage;
-            lowOnBattery = batteryPercentage < 20;
-
-            if (lowOnBattery)
+            batteryBattery = new BAtteryPercentageFunctionality(batteryPercentage);
+            if (batteryBattery.isLowOnBattery())
             {
                 NotifyLowPower();
             }
@@ -22,34 +16,43 @@ namespace APBDPROLEON
 
         public override void TurnOn()
         {
-            if (batteryPercentage < 11)
-                throw new EmptyBatteryException($"Cannot turn on {Name}: Battery is below 11%.");
+            if (batteryBattery.smallerThen11())
+            {
+                throw new EmptyBatteryException($"Cant turn on {Name} with battery lower then 11%");
+            }
 
             IsTurnedOn = true;
-            batteryPercentage -= 10;
-            lowOnBattery = batteryPercentage < 20;
+            batteryBattery.BatterMinus10();
 
-            if (lowOnBattery)
+            if (batteryBattery.isLowOnBattery())
             {
                 NotifyLowPower();
             }
 
-            Console.WriteLine($"{Name} is now turned on. Battery remaining: {batteryPercentage}%.");
+            Console.WriteLine($"{Name} is turrned on with battery {batteryBattery.GetBatteryLevel()}%");
         }
+
 
         public void NotifyLowPower()
         {
-            Console.WriteLine($"Warning: {Name} has low battery ({batteryPercentage}%)!");
+            Console.WriteLine($"Warning: {Name} has low battery with battery {batteryBattery.GetBatteryLevel()}%");
         }
+
 
         public override string ToString()
         {
-            return $"[SmartWatch] ID: {Id}, Name: {Name}, IsTurnedOn: {IsTurnedOn}, Battery: {batteryPercentage}%";
+            return
+                $"[SmartWatch] ID: {Id}, Name: {Name}, IsTurnedOn: {IsTurnedOn}, Battery: {batteryBattery.GetBatteryLevel()}%";
+        }
+
+        public void SetBatteryLevel(int value)
+        {
+            batteryBattery.SetBatteryLevel(value);
         }
     }
 
     public class EmptyBatteryException : Exception
     {
-        public EmptyBatteryException(string message) : base(message) { }
+        public EmptyBatteryException(string message) : base(message) {}
     }
 }
