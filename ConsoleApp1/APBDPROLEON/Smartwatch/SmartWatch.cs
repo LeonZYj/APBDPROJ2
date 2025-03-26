@@ -50,9 +50,4 @@ namespace APBDPROLEON
             batteryBattery.SetBatteryLevel(value);
         }
     }
-
-    public class EmptyBatteryException : Exception
-    {
-        public EmptyBatteryException(string message) : base(message) {}
-    }
 }
