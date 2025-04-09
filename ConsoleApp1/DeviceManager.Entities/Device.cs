@@ -19,4 +19,5 @@ public abstract class Device
         IsTurnedOn = false;
         Console.WriteLine($"{Name} has been turned off.");
     }
+    
 }
