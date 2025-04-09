@@ -1,0 +1,222 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/leonzacharewicz/Desktop/APBDPROJ2-main/ConsoleApp1/DeviceManager.API/DeviceManager.API.csproj": {}
+  },
+  "projects": {
+    "/Users/leonzacharewicz/Desktop/APBDPROJ2-main/ConsoleApp1/DeviceManager.API/DeviceManager.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/leonzacharewicz/Desktop/APBDPROJ2-main/ConsoleApp1/DeviceManager.API/DeviceManager.API.csproj",
+        "projectName": "DeviceManager.API",
+        "projectPath": "/Users/leonzacharewicz/Desktop/APBDPROJ2-main/ConsoleApp1/DeviceManager.API/DeviceManager.API.csproj",
+        "packagesPath": "/Users/leonzacharewicz/.nuget/packages/",
+        "outputPath": "/Users/leonzacharewicz/Desktop/APBDPROJ2-main/ConsoleApp1/DeviceManager.API/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/leonzacharewicz/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/leonzacharewicz/Desktop/APBDPROJ2-main/ConsoleApp1/DeviceManager.Entities/DeviceManager.Entities.csproj": {
+                "projectPath": "/Users/leonzacharewicz/Desktop/APBDPROJ2-main/ConsoleApp1/DeviceManager.Entities/DeviceManager.Entities.csproj"
+              },
+              "/Users/leonzacharewicz/Desktop/APBDPROJ2-main/ConsoleApp1/DeviceManager.Logic/DeviceManager.Logic.csproj": {
+                "projectPath": "/Users/leonzacharewicz/Desktop/APBDPROJ2-main/ConsoleApp1/DeviceManager.Logic/DeviceManager.Logic.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.13, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/leonzacharewicz/.dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/leonzacharewicz/Desktop/APBDPROJ2-main/ConsoleApp1/DeviceManager.Entities/DeviceManager.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/leonzacharewicz/Desktop/APBDPROJ2-main/ConsoleApp1/DeviceManager.Entities/DeviceManager.Entities.csproj",
+        "projectName": "DeviceManager.Entities",
+        "projectPath": "/Users/leonzacharewicz/Desktop/APBDPROJ2-main/ConsoleApp1/DeviceManager.Entities/DeviceManager.Entities.csproj",
+        "packagesPath": "/Users/leonzacharewicz/.nuget/packages/",
+        "outputPath": "/Users/leonzacharewicz/Desktop/APBDPROJ2-main/ConsoleApp1/DeviceManager.Entities/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/leonzacharewicz/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.13, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/leonzacharewicz/.dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/leonzacharewicz/Desktop/APBDPROJ2-main/ConsoleApp1/DeviceManager.Logic/DeviceManager.Logic.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/leonzacharewicz/Desktop/APBDPROJ2-main/ConsoleApp1/DeviceManager.Logic/DeviceManager.Logic.csproj",
+        "projectName": "DeviceManager.Logic",
+        "projectPath": "/Users/leonzacharewicz/Desktop/APBDPROJ2-main/ConsoleApp1/DeviceManager.Logic/DeviceManager.Logic.csproj",
+        "packagesPath": "/Users/leonzacharewicz/.nuget/packages/",
+        "outputPath": "/Users/leonzacharewicz/Desktop/APBDPROJ2-main/ConsoleApp1/DeviceManager.Logic/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/leonzacharewicz/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/leonzacharewicz/Desktop/APBDPROJ2-main/ConsoleApp1/DeviceManager.Entities/DeviceManager.Entities.csproj": {
+                "projectPath": "/Users/leonzacharewicz/Desktop/APBDPROJ2-main/ConsoleApp1/DeviceManager.Entities/DeviceManager.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/leonzacharewicz/.dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
